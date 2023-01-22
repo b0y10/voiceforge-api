@@ -50,7 +50,7 @@ $(document).ready(function(){
 	$("button#demo_submit").click(function(){
 		$("button#demo_submit").attr("disabled", "disabled");
 
-		var url = "https://web.archive.org/web/20130923163437/http://voiceforge.com/demos/createAudio.php";
+		var url = "http://voiceforge.com/demos/createAudio.php";
 		
 		$("button#demo_submit").html('<img src="/media/images/ajax_loader.gif" />');
 		
@@ -138,7 +138,7 @@ function voiceChanged(voice)
 
 function audioDone()
 {
-	$.post('https://web.archive.org/web/20130923163459/http://www.voiceforge.com/demos/deleteAudio.php', function(data){});
+	$.post('http://www.voiceforge.com/demos/deleteAudio.php', function(data){});
 	$("button#demo_submit").removeAttr("disabled");
 	$("button#demo_submit").html("Say it");
 	$("#demoAudio").remove();
